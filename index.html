@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar-content">
+       <div class="col" id="leftCol">
+            <h1>Controller</h1>
+            <div class="nodeButtonContainer">
+                <button id="selectStart">Select<br>Start</button>
+                <button id="selectFinish">Select<br>Finish</button>
+                <button id="createObstacle">Create<br>Obstacles</button>
+            </div>
+            <div class="slideContainer">
+                <h2>Columns</h2>
+                <input type="range" min="2" max="100" value="50" class="slider" id="numCol">
+                <p id="colNum">50</p>
+                <h2>Rows</h2>
+                <input type="range" min="2" max="100" value="50" class="slider" id="numRow">
+                <p id="rowNum">50</p>
+                <br>
+                <button  id="generateGridButton">Generate Grid</button>
+                <button id="clearButton">Clear</button>
+            </div>
+            <div class="slideContainer">
+                <h2>Draw Speed</h2>
+                <input type="range" min="0" max="2000" value="2000" class="slider" id="delay">
+            </div>
+            <div class="calcPathButton">
+                <button id="calcPath">Find Path</button>
+            </div>
+        </div>
+       <div class="col" id="rightCol">
+            <h1 id="pathNotFound"></h1>
+            <div class="pathGrid" id="pathCanvas">
+
+            </div>
+       </div>
+    </div>
+</body>
+</html>

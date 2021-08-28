@@ -1,0 +1,178 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 130%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+#pathNotFound {
+    height: 5%;
+    font-size: 4.5ch;
+}
+
+.sidebar-content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: gray;
+}
+
+.sidebar-content > *:nth-child(1){
+    flex:  1 1 19%;
+    border-right-style: solid;
+    border-right-width: 1%;
+}
+
+.sidebar-content > *:nth-child(2){
+    flex: 1 1 80%;
+}
+
+#leftCol{
+    background-color: rgb(219, 129, 45);;
+}
+
+#leftCol > * > button {
+    background-color: rgb(182, 103, 57);
+    border: 2px saddlebrown;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+#leftCol > * > button:hover {
+    cursor: pointer;
+    background-color: rgba(122, 66, 33, 0.5);
+}
+
+#rightCol{
+    background-color: rgb(128, 41, 0);
+}
+
+.nodeButtonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.nodeButtonContainer > *:nth-child(1){
+    flex: 1 1 1em;
+
+}
+
+.nodeButtonContainer > *:nth-child(2){
+    flex: 1 1 1em;
+}
+
+.nodeButtonContainer > *:nth-child(3){
+    flex: 1 1 1em;
+}
+
+.slideContainer{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0.5em;
+}
+
+.slideContainer > p {
+    background-color: rgb(182, 103, 57);
+    width: 3.5ch;
+    text-align: center;
+    border: solid;
+    border-color: saddlebrown;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 5px;  
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+
+.slider:hover {
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: saddlebrown;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15;
+    height: 15px;
+    border-radius: 50%;
+    background: saddlebrown;
+    cursor: pointer;
+  }
+
+.slideContainer > button{
+    display: block;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 1em;
+    padding: 1.5em;
+
+}
+
+.pathGrid{
+    height: 90%;
+    display: grid;
+    justify-content:center;
+    align-content:flex-start;
+}
+
+.pathGrid > button{
+    cursor: pointer;
+    border: 1px solid rgba(219, 129, 45, .75);
+    outline: none;
+    background-color: rgb(182, 103, 57);
+    height: 1em;
+    width: 1em;
+}
+
+/*.pathGrid > button{
+    cursor: pointer;
+    border: 1px solid gray;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    height: 1em;
+    width: 1em;
+}*/
+
+.calcPathButton{
+    height: 10%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.calcPathButton > button{
+    display: block;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 1em;
+    padding: 1.5em;
+}
+
+#colNum, #rowNum{
+    margin-left: 1em;
+}
+
